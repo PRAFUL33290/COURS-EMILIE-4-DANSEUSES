@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiation Bollywood &mdash; 4 Danseuses | 18 avril 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://parvati-india.fr">
+    <link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" fetchpriority="high">
+    <link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2026/01/LOGO-BOLLYWOOD.png" fetchpriority="high">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-1: #000000;
+            --bg-2: #130d08;
+            --card: rgba(0, 0, 0, 0.92);
+            --ink: #f5f2eb;
+            --muted: #c4beb4;
+            --primary: #b90d01;
+            --primary-deep: #8f0c02;
+            --accent: #d29d59;
+            --line: rgba(210, 157, 89, 0.25);
+            --white: #ffffff;
+            --success: #1f9b6b;
+            --shadow: 0 16px 40px rgba(0, 0, 0, 0.42);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Manrope", sans-serif;
+            color: var(--ink);
+            background: linear-gradient(140deg, var(--bg-1), var(--bg-2));
+            min-height: 100vh;
+            line-height: 1.55;
+            padding: 20px;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(circle at 10% 15%, rgba(210, 157, 89, 0.18), transparent 40%),
+                radial-gradient(circle at 90% 10%, rgba(185, 13, 1, 0.2), transparent 42%),
+                linear-gradient(135deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.72)),
+                url("https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg") center/cover;
+            background-color: var(--bg-2);
+        }
+
+        .page {
+            max-width: 1150px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--accent);
+        }
+
+        .hero {
+            padding: 42px 32px 30px;
+            background:
+                linear-gradient(130deg, rgba(185, 13, 1, 0.9), rgba(143, 12, 2, 0.82)),
+                url("https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg") center/cover;
+            color: var(--white);
+            border-bottom: 2px solid var(--accent);
+            text-align: center;
+        }
+
+        .hero-logo {
+            width: min(320px, 70vw);
+            margin: 0 auto 2px;
+            display: block;
+        }
+
+        .hero-bollywood {
+            width: min(200px, 48vw);
+            margin: 0 auto 14px;
+            display: block;
+        }
+
+        .event-pill {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(210, 157, 89, 0.75);
+            color: #ffe4b5;
+            font-size: 0.84rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            padding: 6px 14px;
+            margin-bottom: 14px;
+            animation: appear 0.45s ease;
+        }
+
+        h1 {
+            font-family: "Cinzel", serif;
+            font-size: clamp(1.55rem, 3.2vw, 2.5rem);
+            line-height: 1.2;
+            margin-bottom: 10px;
+            animation: appear 0.55s ease;
+        }
+
+        .hero-sub {
+            color: #f8dfb1;
+            max-width: 780px;
+            margin: 0 auto 24px;
+            font-size: 1rem;
+            animation: appear 0.65s ease;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+            animation: lift 0.6s ease;
+        }
+
+        .info-card {
+            background: rgba(0, 0, 0, 0.8);
+            color: #f7f0e1;
+            border-radius: 14px;
+            border: 2px solid rgba(210, 157, 89, 0.45);
+            padding: 18px;
+            min-height: 160px;
+            display: grid;
+            gap: 8px;
+        }
+
+        .info-card.featured {
+            border-color: var(--accent);
+            box-shadow: 0 10px 24px rgba(185, 13, 1, 0.3);
+        }
+
+        .info-label {
+            font-size: 0.76rem;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 800;
+        }
+
+        .info-title {
+            font-family: "Cinzel", serif;
+            font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+            line-height: 1.2;
+            color: #ffffff;
+        }
+
+        .info-detail {
+            font-size: 0.95rem;
+            color: #ddd2be;
+            font-weight: 600;
+        }
+
+        .cta-row {
+            margin-top: 18px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-weight: 800;
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-deep);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border-color: rgba(210, 157, 89, 0.9);
+            color: #ffe0ad;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .section {
+            padding: 34px 32px;
+            border-top: 1px solid var(--line);
+            background: rgba(10, 10, 10, 0.85);
+            opacity: 1;
+        }
+
+        .section.will-animate {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.45s ease, transform 0.45s ease;
+        }
+
+        .section.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section h2 {
+            font-family: "Cinzel", serif;
+            font-size: clamp(1.2rem, 2.2vw, 1.75rem);
+            margin-bottom: 8px;
+        }
+
+        .section p.lead {
+            color: var(--muted);
+            margin-bottom: 18px;
+        }
+
+        .option-box {
+            margin-top: 16px;
+            background: rgba(185, 13, 1, 0.14);
+            border: 1px solid rgba(210, 157, 89, 0.4);
+            border-left: 5px solid var(--accent);
+            border-radius: 10px;
+            padding: 14px;
+        }
+
+        .option-title {
+            font-weight: 800;
+            color: #ffdca8;
+            margin-bottom: 4px;
+        }
+
+        .chips {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .chip {
+            background: rgba(0, 0, 0, 0.65);
+            border: 1px solid rgba(210, 157, 89, 0.35);
+            border-radius: 999px;
+            padding: 6px 11px;
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: #f3d39b;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .card {
+            background: rgba(18, 18, 18, 0.92);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .card h3 {
+            font-family: "Cinzel", serif;
+            font-size: 1.05rem;
+            color: #ffd999;
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .card ul li {
+            font-size: 0.9rem;
+            color: #ddd2be;
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .card ul li::before {
+            content: "•";
+            color: var(--accent);
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .card ul li strong {
+            color: #f3d39b;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .media-grid img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid var(--line);
+        }
+
+        /* ── Carrousel ── */
+        .carousel-section {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: #000;
+            line-height: 0;
+        }
+
+        .carousel-track {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+            user-select: none;
+            -webkit-user-select: none;
+            will-change: scroll-position;
+        }
+        .carousel-track:active { cursor: grabbing; }
+        .carousel-track::-webkit-scrollbar { display: none; }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+            width: 100%;
+            position: relative;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            line-height: 0;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 22px 28px 18px;
+            background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, transparent 100%);
+            color: #fff;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            line-height: 1.4;
+        }
+
+        .carousel-caption span {
+            color: var(--accent);
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            background: rgba(0,0,0,0.55);
+            border: 1px solid rgba(210,157,89,0.45);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: background 0.18s, border-color 0.18s;
+            color: #fff;
+        }
+
+        .carousel-btn:hover {
+            background: rgba(185,13,1,0.75);
+            border-color: var(--accent);
+        }
+
+        .carousel-btn-prev { left: 14px; }
+        .carousel-btn-next { right: 14px; }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 7px;
+            z-index: 10;
+        }
+
+        .carousel-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.4);
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            border: none;
+        }
+
+        .carousel-dot.active {
+            background: var(--accent);
+            transform: scale(1.35);
+        }
+
+        /* ── Objectifs cards ── */
+        .objectif-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-top: 16px;
+        }
+
+        .objectif-card {
+            background: rgba(18, 18, 18, 0.92);
+            border: 2px solid rgba(210, 157, 89, 0.25);
+            border-radius: 14px;
+            padding: 20px 16px;
+            text-align: center;
+        }
+
+        .objectif-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .objectif-title {
+            font-family: "Cinzel", serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffd999;
+            margin-bottom: 8px;
+        }
+
+        .objectif-desc {
+            font-size: 0.88rem;
+            color: #c4beb4;
+            line-height: 1.6;
+        }
+
+        /* ── Contact panel ── */
+        .contact-panel {
+            background: rgba(10, 10, 10, 0.96);
+            color: #edf4f6;
+            border-radius: 14px;
+            padding: 20px;
+            display: grid;
+            gap: 10px;
+            border: 1px solid var(--accent);
+        }
+
+        .contact-panel h3 {
+            font-family: "Cinzel", serif;
+            font-size: 1.2rem;
+        }
+
+        .contact-line {
+            color: #e8d7bc;
+            font-weight: 600;
+        }
+
+        .contact-line a {
+            color: #ffd080;
+            text-decoration: none;
+        }
+
+        .contact-line a:hover {
+            text-decoration: underline;
+        }
+
+        .strong {
+            font-weight: 800;
+        }
+
+        /* ── Site Footer ── */
+        .site-footer {
+            background: #000000;
+            border-top: 2px solid rgba(210, 157, 89, 0.4);
+            padding: 40px 36px 24px;
+        }
+
+        .site-footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid rgba(210, 157, 89, 0.2);
+        }
+
+        .sf-col-title {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+
+        .sf-logo {
+            width: 130px;
+            margin-bottom: 12px;
+            display: block;
+            opacity: 0.92;
+        }
+
+        .sf-tagline {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #c4a87a;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+
+        .sf-sub {
+            font-size: 0.78rem;
+            color: #7a6a5a;
+            font-style: italic;
+            margin-bottom: 14px;
+        }
+
+        .sf-address {
+            font-size: 0.8rem;
+            color: #9a8a78;
+            line-height: 1.7;
+        }
+
+        .sf-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sf-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: #9a8878;
+            line-height: 1.5;
+        }
+
+        .sf-list li::before {
+            content: "•";
+            color: var(--accent);
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .sf-list li strong {
+            color: #c4a87a;
+        }
+
+        .sf-list a {
+            color: #c4a87a;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .sf-list a:hover {
+            color: #ffd999;
+            text-decoration: underline;
+        }
+
+        .sf-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 18px;
+            font-size: 0.74rem;
+            color: #5a4e42;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .sf-bottom a {
+            color: #7a6a5a;
+            text-decoration: none;
+        }
+
+        .sf-bottom a:hover {
+            color: var(--accent);
+        }
+
+        /* ── Validation à confirmer ── */
+        .pending-box {
+            background: rgba(210, 157, 89, 0.10);
+            border: 1px solid rgba(210, 157, 89, 0.45);
+            border-left: 5px solid var(--accent);
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-top: 16px;
+        }
+
+        .pending-box-title {
+            font-family: "Cinzel", serif;
+            font-size: 1rem;
+            color: #ffd999;
+            margin-bottom: 8px;
+        }
+
+        .pending-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 0;
+        }
+
+        .pending-list li {
+            font-size: 0.9rem;
+            color: #ddd2be;
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+        }
+
+        .pending-list li::before {
+            content: "→";
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        @keyframes appear {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes lift {
+            from { opacity: 0; transform: translateY(16px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @media (max-width: 930px) {
+            .info-grid,
+            .grid-2,
+            .media-grid,
+            .objectif-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero,
+            .section {
+                padding: 24px 18px;
+            }
+
+            .media-grid img {
+                height: 220px;
+            }
+
+            .cta-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .info-card {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                padding: 20px 14px;
+            }
+            .hero {
+                padding: 28px 14px 22px;
+            }
+            h1 {
+                font-size: 1.35rem;
+            }
+            body {
+                padding: 0;
+                background: #000000;
+            }
+            body::before {
+                display: none;
+            }
+            .page {
+                border-radius: 0;
+                border: none;
+                box-shadow: none;
+            }
+            .carousel-slide img {
+                height: 100svh;
+                max-height: 100svh;
+                object-fit: cover;
+                object-position: center center;
+            }
+            .carousel-btn {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 930px) {
+            .carousel-slide img {
+                height: 420px;
+            }
+            .objectif-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 860px) {
+            .site-footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .site-footer {
+                padding: 28px 18px 18px;
+            }
+            .site-footer-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+            .sf-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header class="hero">
+            <img class="hero-logo" src="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" alt="Logo Parvati India">
+            <img class="hero-bollywood" src="https://parvati-india.fr/wp-content/uploads/2026/01/LOGO-BOLLYWOOD.png" alt="Logo Bollywood">
+            <div class="event-pill">Initiation Bollywood &mdash; 4 Danseuses &mdash; 18 avril 2026</div>
+            <h1>Fiche Projet : Initiation Bollywood</h1>
+            <p class="hero-sub">
+                Samedi <strong>18 avril 2026</strong> &mdash; Groupe de <strong>4 danseuses</strong>.
+                Une immersion dans l&rsquo;univers color&eacute; et dynamique du cin&eacute;ma indien &agrave; travers une approche ludique et accessible.
+            </p>
+
+            <div class="info-grid" aria-label="Informations principales du cours">
+                <article class="info-card">
+                    <div class="info-label">&#128197; Date &amp; Horaire</div>
+                    <div class="info-title">18 avril 2026</div>
+                    <div class="info-detail">Samedi &mdash; 10h00</div>
+                    <div class="info-detail" style="color:rgba(210,157,89,0.8);font-size:0.85rem">Dur&eacute;e &agrave; confirmer selon disponibilit&eacute;</div>
+                </article>
+
+                <article class="info-card featured">
+                    <div class="info-label">&#127939; Public</div>
+                    <div class="info-title">4 Danseuses</div>
+                    <div class="info-detail">Cours particulier</div>
+                    <div class="info-detail" style="color:#ffd999;font-weight:800">100,00&nbsp;&euro; &mdash; 1h&nbsp;&nbsp;|&nbsp;&nbsp;120,00&nbsp;&euro; &mdash; 1h30</div>
+                </article>
+
+                <article class="info-card">
+                    <div class="info-label">&#128205; Lieux pressentis</div>
+                    <div class="info-title" style="font-size:1.05rem">2 options</div>
+                    <div class="info-detail">Le Pian-M&eacute;doc &mdash; ASPM DANSE</div>
+                    <div class="info-detail">M&eacute;rignac &mdash; Centre CL2V</div>
+                </article>
+            </div>
+
+            <div class="cta-row">
+                <a class="btn btn-primary" href="mailto:contact@parvati-india.fr?subject=Demande%20Initiation%20Bollywood%20-%2018%20avril%202026&body=Bonjour%2C%0A%0AJe%20souhaite%20avoir%20plus%20d%27informations%20concernant%20le%20cours%20d%27initiation%20Bollywood%20pr%C3%A9vu%20le%2018%20avril%202026%20pour%204%20danseuses.%0A%0ACordialement%2C">Demander une proposition</a>
+                <a class="btn btn-secondary" href="tel:0631321053">Appeler&nbsp;: 06&nbsp;31&nbsp;32&nbsp;10&nbsp;53</a>
+            </div>
+        </header>
+
+        <!-- Carrousel photos Bollywood -->
+        <div class="carousel-section" aria-label="Photos Bollywood Parvati India" role="region">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide">
+                    <img src="https://raw.githubusercontent.com/PRAFUL33290/NUIT-DES-BIBLIOTHEQUES/main/img/1ed56634-3815-49d9-8b32-d6ad55071dee.JPG" alt="Initiation Bollywood — le public danse avec les artistes" loading="eager">
+                    <div class="carousel-caption">Initiation Bollywood &mdash; <span>Parvati India</span> &mdash; Le public danse avec les artistes</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://raw.githubusercontent.com/PRAFUL33290/NUIT-DES-BIBLIOTHEQUES/main/img/c4e75149-1a5a-4fec-b846-2ff401f2156e.JPG" alt="Enfants qui dansent le Bollywood" loading="lazy" decoding="async">
+                    <div class="carousel-caption">Initiation Bollywood &mdash; <span>Parvati India</span> &mdash; Les danseuses sur la piste</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://raw.githubusercontent.com/PRAFUL33290/NUIT-DES-BIBLIOTHEQUES/main/img/de5d9e0e-ebca-40fd-8d85-6434ee4daf6f.JPG" alt="Spectacle danseur Bollywood" loading="lazy" decoding="async" style="object-position: center top;">
+                    <div class="carousel-caption">Bollywood &mdash; <span>Parvati India</span> &mdash; Postures &amp; Gestuelle</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://raw.githubusercontent.com/PRAFUL33290/NUIT-DES-BIBLIOTHEQUES/main/img/edc1c459-09dd-4098-bcae-f5b792944e44.JPG" alt="Soirée Bollywood" loading="lazy" decoding="async">
+                    <div class="carousel-caption">Bollywood &mdash; <span>Parvati India</span> &mdash; Une exp&eacute;rience conviviale et festive</div>
+                </div>
+            </div>
+
+            <button class="carousel-btn carousel-btn-prev" id="carouselPrev" aria-label="Photo pr&eacute;c&eacute;dente">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel-btn carousel-btn-next" id="carouselNext" aria-label="Photo suivante">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+
+            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Navigation du carrousel"></div>
+        </div>
+
+        <!-- Objectifs -->
+        <section class="section" id="objectifs">
+            <h2>&#127919; Objectifs de la s&eacute;ance</h2>
+            <p class="lead">L&rsquo;id&eacute;e est de s&rsquo;immerger dans l&rsquo;univers color&eacute; et dynamique du cin&eacute;ma indien &agrave; travers une approche ludique et accessible.</p>
+
+            <div class="objectif-grid">
+                <div class="objectif-card">
+                    <span class="objectif-icon">&#129485;</span>
+                    <div class="objectif-title">D&eacute;couverte</div>
+                    <p class="objectif-desc">Apprentissage des postures de base et de la gestuelle symbolique des mains <strong>(Mudras)</strong>.</p>
+                </div>
+                <div class="objectif-card" style="border-color:rgba(210,157,89,0.55)">
+                    <span class="objectif-icon">&#127775;</span>
+                    <div class="objectif-title">Initiation</div>
+                    <p class="objectif-desc">Travail sur la coordination et l&rsquo;<strong>expression du visage</strong> typique du style Bollywood.</p>
+                </div>
+                <div class="objectif-card">
+                    <span class="objectif-icon">&#127926;</span>
+                    <div class="objectif-title">Apprentissage</div>
+                    <p class="objectif-desc">Cr&eacute;ation d&rsquo;une <strong>chor&eacute;graphie simple</strong>, rythm&eacute;e et m&eacute;morisable sur une musique moderne / classique indienne.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lieux -->
+        <section class="section" id="lieux">
+            <h2>&#128205; Lieux pressentis</h2>
+            <p class="lead">Deux options sont &agrave; l&rsquo;&eacute;tude pour accueillir le groupe sur le cr&eacute;neau de 10h.</p>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>&#127982; Option 1 &mdash; Le Pian-M&eacute;doc</h3>
+                    <ul>
+                        <li><span><strong>Association ASPM DANSE</strong></span></li>
+                        <li><span>V&eacute;rifier disponibilit&eacute; le samedi 18 avril 2026</span></li>
+                        <li><span>Cr&eacute;neau cible&nbsp;: <strong>10h00</strong></span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>&#127982; Option 2 &mdash; M&eacute;rignac</h3>
+                    <ul>
+                        <li><span><strong>Centre CL2V</strong> (Centre de Loisirs des 2 Villes)</span></li>
+                        <li><span>V&eacute;rifier disponibilit&eacute; le samedi 18 avril 2026</span></li>
+                        <li><span>Cr&eacute;neau cible&nbsp;: <strong>10h00</strong></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tarifs -->
+        <section class="section" id="tarifs">
+            <h2>&#128176; Tarifs</h2>
+            <p class="lead">Cours particulier pour un groupe de 4 danseuses &mdash; tarifs confirm&eacute;s.</p>
+
+            <div class="grid-2">
+                <div class="card" style="border-color:rgba(210,157,89,0.55);text-align:center;padding:28px 20px">
+                    <div style="font-size:0.76rem;letter-spacing:0.09em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:10px">Formule 1 heure</div>
+                    <div style="font-family:'Cinzel',serif;font-size:3rem;font-weight:800;color:#ffd999;line-height:1">100,00&nbsp;<span style="font-size:1.6rem">&euro;</span></div>
+                    <div style="font-size:0.9rem;color:var(--muted);margin-top:8px">Dur&eacute;e&nbsp;: <strong style="color:#f3d39b">1 heure</strong></div>
+                    <div style="font-size:0.82rem;color:#9a8a78;margin-top:6px">4 danseuses &mdash; cours particulier</div>
+                </div>
+                <div class="card" style="border-color:var(--accent);text-align:center;padding:28px 20px;box-shadow:0 10px 24px rgba(185,13,1,0.3)">
+                    <div style="font-size:0.76rem;letter-spacing:0.09em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:10px">Formule 1h30</div>
+                    <div style="font-family:'Cinzel',serif;font-size:3rem;font-weight:800;color:#ffd999;line-height:1">120,00&nbsp;<span style="font-size:1.6rem">&euro;</span></div>
+                    <div style="font-size:0.9rem;color:var(--muted);margin-top:8px">Dur&eacute;e&nbsp;: <strong style="color:#f3d39b">1 heure 30</strong></div>
+                    <div style="font-size:0.82rem;color:#9a8a78;margin-top:6px">4 danseuses &mdash; cours particulier</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Éléments à valider -->
+        <section class="section" id="validation">
+            <h2>&#128203; &Eacute;l&eacute;ments &agrave; valider</h2>
+            <p class="lead">Points &agrave; confirmer avant de finaliser l&rsquo;organisation du cours.</p>
+
+            <div class="pending-box">
+                <div class="pending-box-title">Points en attente de confirmation</div>
+                <ul class="pending-list">
+                    <li><span><strong>Disponibilit&eacute;</strong>&nbsp;: Confirmer quelle structure peut accueillir le groupe sur le cr&eacute;neau de 10h.</span></li>
+                    <li><span><strong>Tenue conseill&eacute;e</strong>&nbsp;: Tenue souple, pieds nus ou chaussures de danse, avec &eacute;ventuellement un accessoire (foulard&nbsp;/ dupatta) pour marquer l&rsquo;esprit Bollywood.</span></li>
+                </ul>
+            </div>
+
+            <div class="chips" style="margin-top:18px">
+                <span class="chip">&#128197; 18 avril 2026</span>
+                <span class="chip">&#8987; 10h00</span>
+                <span class="chip">&#127938; 4 danseuses</span>
+                <span class="chip">&#128131; Cours particulier</span>
+                <span class="chip" style="border-color:rgba(210,157,89,0.7);color:#ffd999">&#128176; 100,00&nbsp;&euro; / 1h</span>
+                <span class="chip" style="border-color:rgba(210,157,89,0.7);color:#ffd999">&#128176; 120,00&nbsp;&euro; / 1h30</span>
+                <span class="chip">&#128197; Dur&eacute;e &agrave; confirmer</span>
+                <span class="chip">&#129488; Tenue souple</span>
+                <span class="chip">&#129496; Dupatta / Foulard</span>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <h2>&#9993;&#65039; Contact &amp; Renseignements</h2>
+            <p class="lead">Pour confirmer la disponibilit&eacute; des salles ou obtenir un devis personnalis&eacute;, contactez Parvati India.</p>
+
+            <div class="grid-2">
+                <div class="contact-panel">
+                    <h3>Parvati India</h3>
+                    <div class="contact-line">Danse Bollywood &mdash; Bordeaux M&eacute;tropole</div>
+                    <div class="contact-line">&#128222; <a href="tel:0631321053">06 31 32 10 53</a></div>
+                    <div class="contact-line">&#9993; <a href="mailto:contact@parvati-india.fr">contact@parvati-india.fr</a></div>
+                    <div class="contact-line">&#127758; <a href="https://parvati-india.fr/" target="_blank" rel="noopener noreferrer">www.parvati-india.fr</a></div>
+                </div>
+                <div class="card" style="border-color:rgba(210,157,89,0.45)">
+                    <h3>R&eacute;capitulatif</h3>
+                    <ul>
+                        <li><span>Date&nbsp;: <strong>Samedi 18 avril 2026</strong></span></li>
+                        <li><span>Horaire&nbsp;: <strong>10h00</strong> (dur&eacute;e &agrave; confirmer)</span></li>
+                        <li><span>Public&nbsp;: <strong>4 danseuses</strong></span></li>
+                        <li><span>Style&nbsp;: <strong>Bollywood</strong></span></li>
+                        <li><span>Tarif&nbsp;: <strong>100,00&nbsp;&euro; / 1h</strong> &mdash; <strong>120,00&nbsp;&euro; / 1h30</strong></span></li>
+                        <li><span>Lieu&nbsp;: <strong>ASPM DANSE (Le Pian)</strong> ou <strong>CL2V (M&eacute;rignac)</strong></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="site-footer-grid">
+                <!-- Colonne 1 : identité -->
+                <div>
+                    <img class="sf-logo" src="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" alt="Logo Parvati India">
+                    <p class="sf-tagline">Danse Bollywood sur Bordeaux</p>
+                    <p class="sf-sub">Spectacles &amp; Cours de danse</p>
+                    <div class="sf-address">
+                        Rue des pins<br>
+                        33290 Parempuye<br>
+                        France
+                    </div>
+                </div>
+
+                <!-- Colonne 2 : infos légales -->
+                <div>
+                    <span class="sf-col-title">Infos</span>
+                    <ul class="sf-list">
+                        <li><span><strong>SIRET&nbsp;:</strong> 852 373 570 00013</span></li>
+                        <li><span><strong>SIREN&nbsp;:</strong> 852 373 570</span></li>
+                        <li><span><strong>E-MAIL&nbsp;:</strong> <a href="mailto:contact@parvati-india.fr">contact@parvati-india.fr</a></span></li>
+                        <li><span><strong>T&eacute;l&nbsp;:</strong> <a href="tel:0631321053">06 31 32 10 53</a></span></li>
+                        <li><span>Responsable&nbsp;: Julien Guerrier</span></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : liens -->
+                <div>
+                    <span class="sf-col-title">Liens utiles</span>
+                    <ul class="sf-list">
+                        <li><a href="https://parvati-india.fr/" target="_blank" rel="noopener noreferrer">www.parvati-india.fr</a></li>
+                        <li><a href="https://parvati-india.fr/mentions-legales/" target="_blank" rel="noopener noreferrer">Mentions l&eacute;gales</a></li>
+                        <li><a href="https://parvati-india.fr/politique-de-confidentialite/" target="_blank" rel="noopener noreferrer">Politique de confidentialit&eacute;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sf-bottom">
+                <span>&copy; 2026 Parvati India &mdash; Tous droits r&eacute;serv&eacute;s</span>
+                <span>Tarifs confirm&eacute;s : 100,00&nbsp;&euro;&nbsp;/&nbsp;1h &mdash; 120,00&nbsp;&euro;&nbsp;/&nbsp;1h30 (cours particulier, 4 danseuses).</span>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+    /* ── Animations de sections via IntersectionObserver ── */
+    (function () {
+        if (!('IntersectionObserver' in window)) return;
+        var sections = document.querySelectorAll('.section');
+        sections.forEach(function (s) { s.classList.add('will-animate'); });
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.06 });
+        sections.forEach(function (s) { observer.observe(s); });
+    })();
+    </script>
+
+    <script>
+    (function () {
+        var track    = document.getElementById('carouselTrack');
+        var prev     = document.getElementById('carouselPrev');
+        var next     = document.getElementById('carouselNext');
+        var dotsWrap = document.getElementById('carouselDots');
+        var slides   = track ? track.querySelectorAll('.carousel-slide') : [];
+        var total    = slides.length;
+        if (!track || total === 0) return;
+
+        /* Génération des dots */
+        var dots = [];
+        for (var i = 0; i < total; i++) {
+            var d = document.createElement('button');
+            d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            d.setAttribute('role', 'tab');
+            d.setAttribute('aria-label', 'Photo ' + (i + 1));
+            d.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+            (function(idx){ d.addEventListener('click', function(){ goTo(idx); }); })(i);
+            dotsWrap.appendChild(d);
+            dots.push(d);
+        }
+
+        var current = 0;
+
+        function updateDots(idx) {
+            dots.forEach(function(d, i) {
+                d.classList.toggle('active', i === idx);
+                d.setAttribute('aria-selected', i === idx ? 'true' : 'false');
+            });
+        }
+
+        function goTo(idx) {
+            current = (idx + total) % total;
+            track.scrollTo({ left: current * track.clientWidth, behavior: 'smooth' });
+            updateDots(current);
+        }
+
+        if (prev) prev.addEventListener('click', function(){ goTo(current - 1); });
+        if (next) next.addEventListener('click', function(){ goTo(current + 1); });
+
+        /* Sync dots au scroll */
+        var ticking = false;
+        track.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(function() {
+                    var idx = Math.round(track.scrollLeft / track.clientWidth);
+                    if (idx !== current) { current = idx; updateDots(current); }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+
+        /* Drag souris */
+        var isDragging = false, startX = 0, scrollStart = 0;
+        track.addEventListener('mousedown', function(e) {
+            isDragging = true; startX = e.pageX; scrollStart = track.scrollLeft;
+        });
+        document.addEventListener('mousemove', function(e) {
+            if (!isDragging) return;
+            track.scrollLeft = scrollStart - (e.pageX - startX);
+        });
+        document.addEventListener('mouseup', function() {
+            if (!isDragging) return;
+            isDragging = false;
+            var idx = Math.round(track.scrollLeft / track.clientWidth);
+            goTo(idx);
+        });
+
+        /* Auto-play toutes les 5 s */
+        setInterval(function() { goTo(current + 1); }, 5000);
+    })();
+    </script>
+</body>
+</html>
