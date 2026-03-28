@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://parvati-india.fr">
     <link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2023/10/Devotional-Background-For-god-worship-Animation-video.00_00_09_20.Still001.jpg" fetchpriority="high">
-    <link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" fetchpriority="high">
+    <link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2025/12/logo.webp" fetchpriority="high">
     <link rel="preload" as="image" href="https://parvati-india.fr/wp-content/uploads/2026/01/LOGO-BOLLYWOOD.png" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -435,6 +435,76 @@
             transform: scale(1.35);
         }
 
+        /* ── Lecteur musical ── */
+        .music-player {
+            background: linear-gradient(135deg, rgba(10,10,10,0.97), rgba(30,10,10,0.97));
+            border-top: 2px solid var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding: 28px 32px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .music-cover {
+            flex-shrink: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+            box-shadow: 0 6px 20px rgba(185,13,1,0.35);
+        }
+
+        .music-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .music-label {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .music-title {
+            font-family: "Cinzel", serif;
+            font-size: clamp(0.95rem, 2vw, 1.25rem);
+            color: #fff;
+            margin-bottom: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .music-audio {
+            width: 100%;
+            accent-color: var(--accent);
+        }
+
+        .music-audio::-webkit-media-controls-panel {
+            background: rgba(30,20,10,0.9);
+        }
+
+        @media (max-width: 600px) {
+            .music-player {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                padding: 20px 14px;
+            }
+            .music-cover {
+                width: 80px;
+                height: 80px;
+            }
+            .music-audio {
+                width: 100%;
+            }
+        }
+
         /* ── Objectifs cards ── */
         .objectif-grid {
             display: grid;
@@ -542,7 +612,7 @@
         .sf-tagline {
             font-size: 0.8rem;
             font-weight: 700;
-            color: #c4a87a;
+            color: #ffffff;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             margin-bottom: 4px;
@@ -550,14 +620,14 @@
 
         .sf-sub {
             font-size: 0.78rem;
-            color: #7a6a5a;
+            color: #ffffff;
             font-style: italic;
             margin-bottom: 14px;
         }
 
         .sf-address {
             font-size: 0.8rem;
-            color: #9a8a78;
+            color: #ffffff;
             line-height: 1.7;
         }
 
@@ -573,7 +643,7 @@
             align-items: flex-start;
             gap: 8px;
             font-size: 0.82rem;
-            color: #9a8878;
+            color: #ffffff;
             line-height: 1.5;
         }
 
@@ -585,11 +655,11 @@
         }
 
         .sf-list li strong {
-            color: #c4a87a;
+            color: #ffffff;
         }
 
         .sf-list a {
-            color: #c4a87a;
+            color: #ffffff;
             text-decoration: none;
             transition: color 0.15s;
         }
@@ -605,13 +675,13 @@
             align-items: center;
             padding-top: 18px;
             font-size: 0.74rem;
-            color: #5a4e42;
+            color: #ffffff;
             flex-wrap: wrap;
             gap: 8px;
         }
 
         .sf-bottom a {
-            color: #7a6a5a;
+            color: #ffffff;
             text-decoration: none;
         }
 
@@ -768,7 +838,7 @@
 <body>
     <main class="page">
         <header class="hero">
-            <img class="hero-logo" src="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" alt="Logo Parvati India">
+            <img class="hero-logo" src="https://parvati-india.fr/wp-content/uploads/2025/12/logo.webp" alt="Logo Parvati India">
             <img class="hero-bollywood" src="https://parvati-india.fr/wp-content/uploads/2026/01/LOGO-BOLLYWOOD.png" alt="Logo Bollywood">
             <div class="event-pill">Initiation Bollywood &mdash; 4 Danseuses &mdash; 18 avril 2026</div>
             <h1>Fiche Projet : Initiation Bollywood</h1>
@@ -813,6 +883,18 @@
                     <img src="https://raw.githubusercontent.com/PRAFUL33290/NUIT-DES-BIBLIOTHEQUES/main/img/c4e75149-1a5a-4fec-b846-2ff401f2156e.JPG" alt="Enfants qui dansent le Bollywood" loading="eager" decoding="async">
                     <div class="carousel-caption">Initiation Bollywood &mdash; <span>Parvati India</span> &mdash; Les danseuses sur la piste</div>
                 </div>
+                <div class="carousel-slide">
+                    <img src="https://parvati-india.fr/wp-content/uploads/2026/01/996B46FD-C291-4B94-ABF7-1F58876CAB95-1.jpg" alt="Danseuses Bollywood" loading="lazy" decoding="async">
+                    <div class="carousel-caption">Danse Bollywood &mdash; <span>Parvati India</span></div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://parvati-india.fr/wp-content/uploads/2026/01/Firefly_Gemini-Flash_supprime-la-danseuse-en-verte-et-met-beaucoup-plus-d-monde-qui-danse-derriere.-Meme-309260.png" alt="Groupe de danseuses Bollywood" loading="lazy" decoding="async">
+                    <div class="carousel-caption">Ambiance Bollywood &mdash; <span>Parvati India</span></div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://parvati-india.fr/wp-content/uploads/2025/12/Image-Danse-Bollywood.png" alt="Danse Bollywood" loading="lazy" decoding="async">
+                    <div class="carousel-caption">L&rsquo;univers Bollywood &mdash; <span>Parvati India</span></div>
+                </div>
             </div>
 
             <button class="carousel-btn carousel-btn-prev" id="carouselPrev" aria-label="Photo pr&eacute;c&eacute;dente">
@@ -823,6 +905,19 @@
             </button>
 
             <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Navigation du carrousel"></div>
+        </div>
+
+        <!-- Lecteur musical -->
+        <div class="music-player" aria-label="Lecteur musical">
+            <img class="music-cover" src="https://parvati-india.fr/wp-content/uploads/2026/02/AFFICHE-PORTRAIT.png" alt="Affiche Stage de Danse Bollywood">
+            <div class="music-info">
+                <div class="music-label">&#127925; Musique du stage</div>
+                <div class="music-title">Stage de Danse &mdash; Birangay &mdash; Praful &amp; Danseuses</div>
+                <audio class="music-audio" controls preload="none">
+                    <source src="https://parvati-india.fr/wp-content/uploads/2026/02/STAGE-DE-DANSE-BIRANGAY-PRAFUL-D.m4a" type="audio/mp4">
+                    Votre navigateur ne supporte pas l&rsquo;&eacute;l&eacute;ment audio.
+                </audio>
+            </div>
         </div>
 
         <!-- Objectifs -->
@@ -975,7 +1070,7 @@
             <div class="site-footer-grid">
                 <!-- Colonne 1 : identité -->
                 <div>
-                    <img class="sf-logo" src="https://parvati-india.fr/wp-content/uploads/2023/10/LOGO-PARVATI-INDIA-2.png" alt="Logo Parvati India">
+                    <img class="sf-logo" src="https://parvati-india.fr/wp-content/uploads/2025/12/logo.webp" alt="Logo Parvati India">
                     <p class="sf-tagline">Danse Bollywood sur Bordeaux</p>
                     <p class="sf-sub">Spectacles &amp; Cours de danse</p>
                     <div class="sf-address">
